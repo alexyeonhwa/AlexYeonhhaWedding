@@ -311,7 +311,7 @@
 								<input id="nombre" name="nombre" type="text" class="form-control border-0" placeholder="Your Name" />
 								<!--*****************************************-->
 								<div>
-									<select name="nutritional" class="border-0" class="" class="form-control custom-select">
+									<select multiple name="nutritional" class="border-0" class="" class="form-control custom-select">
 										<option value="nutritionalguest" disabled selected>Nutritional needs</option>
 										<!--										<option value="nutritionalnoguest">No</option>-->
 										<option value="Celiac">Celiac patients</option>
@@ -469,7 +469,7 @@ Nut intolerant
 
 			// Creamos los datos para enviar
 			const datos = new FormData(formulario);
-			const url = 'https://script.google.com/macros/s/AKfycbyFFi806A3cDSsbb8ufiAU5Rh7YJUCMkBjcqvC32VQXQK1V6A0A6sanXwcfJdCNtopPYA/exec'; // <--- PEGA TU URL AQUÍ
+			const url = 'https://script.google.com/macros/s/AKfycbwWWnXnHHZg5xzkcI-jRaf6hpwymrzkxJNDUVUYcp5zgS3sPEJ6O1yTZw551PwvzCttzA/exec'; // <--- PEGA TU URL AQUÍ
 
 			fetch(url, {
 					method: 'POST',
