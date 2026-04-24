@@ -290,88 +290,94 @@
 							<!--*****************************************-->
 							<fieldset class="form-row input-group-text">
 								<div>
-									<p>Are you going to attend?</p>
-									<label class="radio-option">
-										<input type="radio" name="asistencia" value="yes" required> Yes
-									</label>
-									<label class="radio-option">
-										<input type="radio" name="asistencia" value="no" required> No
-									</label>
+									<p>Are you going to attend? </p>
 								</div>
-								<!--*****************************************-->
-								<label for="nombre">Your name:</label>
-								<input id="nombre" name="nombre" type="text" class="form-control border-0" placeholder="Your Name" />
-								<!--*****************************************-->
-								<div>
-									<select name="nutritional" class="border-0" class="" class="form-control custom-select">
-										<option value="nutritionalguest" disabled selected>Nutritional needs</option>
-										<!--<option value="nutritionalnoguest">No</option>-->
-										<option value="Celiac">Celiac patients</option>
-										<option value="Vegan">Vegan</option>
-										<option value="Vegetarian">Vegetarian</option>
-										<option value="Lactose Intolerant">Lactose intolerant</option>
-										<option value="Egg Intolerant">Egg intolerant</option>
-										<option value="Nut Intolerant">Nut intolerant</option>
-									</select>
+								<div><label class="radio-option">
+										<input type="radio" name="attend" value="yes" required> Yes</label>
+									<label class="radio-option">
+										<input type="radio" name="attend" value="no" required> No
+									</label>
 								</div>
 							</fieldset>
 							<!--*****************************************-->
 							<fieldset class="form-row input-group-text">
 								<div>
-									<label for="nguests">Nº of acompañantes</label>
-									<select name="nguests" id="nguests" class="border-0" class="" class="form-control custom-select">
-										<option value="0"> </option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
+									<p>Your name: </p>
 								</div>
-							</fieldset>
+								<!-- <label for="nombre">Your name: </label>-->
+								<input id="name" name="name" type="text" class="form-control border-0" placeholder="Your Name" />
 
-							<!--*****************************************-->
-							<fieldset class="form-row input-group-text">
-								<!-- ******************** nombre e intoleracians acompañantes -->
+								<!--*****************************************-->
 								<div>
-
-								</div><label for="nombreguest1">Guest's names
-									<textarea id="guestname" name="guestname" type="text" class="form-control" placeholder="Guest Name"></textarea> </label>
-
-								<div>
-									<div>
-										<p>Nutritional needs for guests:</p>
+									<p>Nutritional needs for you:
 										<label class="radio-option">
 											<input type="radio" name="nutrineedguest" value="yes" required> Yes
 										</label>
 										<label class="radio-option">
 											<input type="radio" name="nutrineedguest" value="no" required> No
 										</label>
-									</div>
-									<select name="nutritionalguest1" class="border-0" class="" class="form-control custom-select">
-										<option value="nutritionalguest" disabled selected>Nutritional needs</option>
-										<!-- <option value="nutritionalnoguest">No</option>-->
-										<option value="Celiac">Celiac patients</option>
-										<option value="Vegan">Vegan</option>
-										<option value="Vegetarian">Vegetarian</option>
-										<option value="Lactose Intolerant">Lactose intolerant</option>
-										<option value="Egg Intolerant">Egg intolerant</option>
-										<option value="Nut Intolerant">Nut intolerant</option>
+										<select name="nutritionalguest" class="border-0" class="" class="form-control custom-select">
+											<option value="nutritionalguest" disabled selected>Nutritional needs</option>
+											<!--<option value="nutritionalnoguest">No</option>-->
+											<option value="Celiac">Celiac</option>
+											<option value="Egg Intolerant">Egg intolerant</option>
+											<option value="Lactose Intolerant">Lactose intolerant</option>
+											<option value="Nut Intolerant">Nut intolerant</option>
+											<option value="Vegan">Vegan</option>
+											<option value="Vegetarian">Vegetarian</option>
+										</select>
+									</p>
+								</div>
+							</fieldset>
+							<!--*****************************************-->
+							<fieldset class="form-row input-group-text">
+								<div>
+									<label for="ncompanions">Companions's number</label>
+									<select name="ncompanions" id="ncompanions" class="border-0" class="" class="form-control custom-select">
+										<option value="0"> </option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
 									</select>
+
 								</div>
 							</fieldset>
 
+							<!--*****************************************-->
+							<fieldset class="form-row input-group-text">
+								<!-- ******************** nombre e intoleracians acompañantes -->
+								<label for="companionsname">Companion's names:
+									<textarea id="companionsname" name="companionsname" type="text" class="form-control" placeholder="Guest Name"></textarea></label>
 
+								<p>Nutritional needs for guests:
 
+									<label class="radio-option">
+										<input type="radio" name="nutrineedcompanion" value="yes" required> Yes
+									</label>
+									<label class="radio-option">
+										<input type="radio" name="nutrineedcompanion" value="no" required> No
+									</label>
 
+									<select name="nutricompanion" class="border-0" class="" class="form-control custom-select">
+										<option value="Nutritional needs" disabled selected>Nutritional needs</option>
+										<!-- <option value="nutritionalnoguest">No</option>-->
+										<option value="Celiac">Celiac</option>
+										<option value="Egg Intolerant">Egg intolerant</option>
+										<option value="Lactose Intolerant">Lactose intolerant</option>
+										<option value="Nut Intolerant">Nut intolerant</option>
+										<option value="Vegan">Vegan</option>
+										<option value="Vegetarian">Vegetarian</option>
+									</select>
+								</p>
 
+							</fieldset>
 							<div class="form-row input-group-text">
 								<p>Send us a message or another information</p>
 								<textarea name="message" class="form-control border-0" rows="5" placeholder="Message"></textarea>
 							</div>
-
 							<div>
 								<button id="btnEnviar" class="btn btn-primary font-weight-normal py-3 px-5" type="submit">Send</button>
-
 							</div>
 							<!-- Contenedor para mensajes de éxito/error -->
 							<div id="respuesta" style="margin-top: 10px;"></div>
@@ -400,9 +406,7 @@
 						<p href="#">Alex: info@example.com | +012 345 6789</p>
 						<p href="#">Yeonhwa: info@example.com | +012 345 6789</p>
 					</div>
-
 					<div class="d-flex flex-column justify-content-center bg-secondary_semi p-4">
-
 						<p>Thank you for your company in this new chapter we're beginning. The gift is optional, attendance is mandatory. But if you'd like to give us a small gift, here is our bank account number.</p>
 
 						<div class="bg-white iban">
@@ -432,11 +436,8 @@
 	<!-- Footer Start -->
 	<footer class="footer-company-name">
 		<div class="container-fluid bg-dark text-white py-5">
-
 			<div class="container text-center py-5">
-
 				<h3 class="font-secondary font-weight-light text-white mb-n2">Thank you for joining us! </h3><br>
-
 				<p>Alex <span class="text-dark-light-green">&#38;</span> Yeonhwa</p>
 
 				<!-- <div class="d-flex justify-content-center mb-4">
@@ -494,7 +495,7 @@
 
 			// Creamos los datos para enviar
 			const datos = new FormData(formulario);
-			const url = 'https://script.google.com/macros/s/AKfycbwWWnXnHHZg5xzkcI-jRaf6hpwymrzkxJNDUVUYcp5zgS3sPEJ6O1yTZw551PwvzCttzA/exec'; // <--- PEGA TU URL AQUÍ
+			const url = 'https://script.google.com/macros/s/AKfycbwK4TyFvcQsBrlS-TJcxygdI5Q34UQXsyZIO8IEEPTDbDvqiJaVRNr7rJMWVWj1KH8uuQ/exec'; // <--- PEGA LA URL AQUÍ PARA EJECUTAR EL SCRIPT Y ENVIAR DATOS
 
 			fetch(url, {
 					method: 'POST',
